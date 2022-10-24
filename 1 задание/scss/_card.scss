@@ -1,0 +1,159 @@
+.card {
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    margin: 27px 17px;
+    overflow: hidden;
+    max-width: 1106px;
+
+    @media screen and (min-width: 561px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__img {
+        width: 100%;
+
+        @media screen and (min-width: 561px) {
+            width: 40%;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+
+        &__length {
+            display: flex;
+            align-items: center;
+
+            @media screen and (min-width: 561px) {
+                order: -1;
+            }
+
+            svg {
+                margin-right: 9px;
+            }
+
+            &-description {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #9E9E9E;
+
+            }
+        }
+
+        &__title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #404040;
+
+            @media screen and (min-width: 561px) {
+                order: -2;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 34px;
+
+            }
+        }
+
+        &__list {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #4B4B4B;
+            padding-left: 0;
+
+            @media screen and (min-width: 561px) {
+                font-size: 18px;
+            }
+
+            &-item {
+                list-style: none;
+                background: url(../img/checkMark.svg) no-repeat 0 2px;
+                padding-left: 35px;
+
+                &+.card-content__list-item {
+                    margin-top: 10px;
+                }
+
+                .time-title {
+                    display: inline-block;
+                    margin-right: 7px;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+
+        &__time {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            @media screen and (min-width: 561px) {
+                display: inline-flex;
+
+            }
+
+            &-item {
+                width: 56px;
+                margin-right: 7px;
+                margin-bottom: 7px;
+                border: none;
+                background-color: #D9E8FF;
+                border-radius: 16px;
+                padding: 3px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #343434;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #6BA6FF;
+                    color: #fff;
+
+                }
+            }
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            align-items: center;
+
+            @media screen and (min-width: 561px) {
+                justify-content: left;
+                gap: 12px;
+
+            }
+
+            .price {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 1;
+                margin: 0;
+
+                @media screen and (min-width: 561px) {
+                    font-size: 36px;
+                }
+
+            }
+
+            .note {
+                font-size: 10px;
+                font-weight: 400;
+
+                @media screen and (min-width: 561px) {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}

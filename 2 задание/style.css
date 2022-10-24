@@ -1,0 +1,16 @@
+.calc {
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.calc-label {
+    padding-left: 20px;
+}
+
+.text {
+    width: 60%;
+    height: auto;
+    font-size: 18px;
+
+}

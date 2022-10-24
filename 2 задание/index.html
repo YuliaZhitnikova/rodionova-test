@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Время из A в B</title>
+</head>
+
+<body>
+    <div id="calc" class="calc">
+        <select name="route" id="route">
+            <option value="из A в B" data-price="700">из A в
+                B</option>
+            <option value="из B в A" data-price="700">из B в
+                A</option>
+            <option value="из A в B и обратно в А"
+                data-price="1200">из A в B
+                и
+                обратно в А</option>
+        </select>
+        <label class="calc-label" for="time">Выберите
+            время</label>
+        <select name="time" id="time">
+
+        </select>
+        <label class="calc-label" for="num">Количество
+            билетов</label>
+        <input type="number" id="num">
+        <button id="get-calc">Посчитать</button>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.js"
+        integrity="sha512-NXopZjApK1IRgeFWl6aECo0idl7A+EEejb8ur0O3nAVt15njX9Gvvk+ArwgHfbdvJTCCGC5wXmsOUXX+ZZzDQw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
