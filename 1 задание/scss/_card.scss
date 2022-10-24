@@ -1,9 +1,39 @@
 .card {
+    position: relative;
     border: 0.3px solid #828282;
     border-radius: 16px;
     margin: 27px 17px;
     overflow: hidden;
     max-width: 1106px;
+
+    &-mark {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #FED74B;
+        color: #000000;
+        padding: 8px 17px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &_violet {
+            top: 0px;
+            background-color: #7553FF;
+            border-radius: 15px 0px 12px;
+            color: #FFFFFF;
+        }
+
+        &_blue {
+            background-color: #099CE8;
+            color: #FFFFFF;
+        }
+
+        @media screen and (min-width: 561px) {
+            font-size: 16px;
+        }
+
+    }
 
     @media screen and (min-width: 561px) {
         display: flex;
@@ -13,9 +43,11 @@
     &__img {
         width: 100%;
 
+
         @media screen and (min-width: 561px) {
             width: 40%;
             object-fit: cover;
+            flex-shrink: 0;
         }
     }
 

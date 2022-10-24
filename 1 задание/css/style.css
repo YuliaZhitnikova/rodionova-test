@@ -26,11 +26,38 @@ body {
 }
 
 .card {
+  position: relative;
   border: 0.3px solid #828282;
   border-radius: 16px;
   margin: 27px 17px;
   overflow: hidden;
   max-width: 1106px;
+}
+.card-mark {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #FED74B;
+  color: #000000;
+  padding: 8px 17px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card-mark_violet {
+  top: 0px;
+  background-color: #7553FF;
+  border-radius: 15px 0px 12px;
+  color: #FFFFFF;
+}
+.card-mark_blue {
+  background-color: #099CE8;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 561px) {
+  .card-mark {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 561px) {
   .card {
@@ -46,6 +73,7 @@ body {
     width: 40%;
     -o-object-fit: cover;
        object-fit: cover;
+    flex-shrink: 0;
   }
 }
 .card-content {
